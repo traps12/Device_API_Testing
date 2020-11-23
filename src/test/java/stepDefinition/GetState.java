@@ -35,6 +35,7 @@ public class GetState {
     @When("I perform get state of connected device")
     public void i_perform_get_state_of_connected_device() {
         response = request.get(config.getStateUrl());
+        Assert.assertEquals(200, response.statusCode());
     }
 
     @Then("get state information about device")

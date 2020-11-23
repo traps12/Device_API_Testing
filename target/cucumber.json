@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-23T15:47:44.974Z",
+        "start_timestamp": "2020-11-23T17:52:47.005Z",
         "line": 3,
         "name": "Get list of available devices name and IP",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 891000000,
+              "duration": 812000000,
               "status": "passed"
             },
             "line": 4,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 1391000000,
+              "duration": 1656000000,
               "status": "passed"
             },
             "line": 5,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 47000000,
+              "duration": 56000000,
               "status": "passed"
             },
             "line": 6,
@@ -50,7 +50,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-23T15:47:47.474Z",
+        "start_timestamp": "2020-11-23T17:52:49.648Z",
         "line": 8,
         "name": "It should not return valid response for invalid Url",
         "description": "",
@@ -60,6 +60,7 @@
         "steps": [
           {
             "result": {
+              "duration": 8000000,
               "status": "passed"
             },
             "line": 9,
@@ -71,7 +72,7 @@
           },
           {
             "result": {
-              "duration": 32000000,
+              "duration": 16000000,
               "status": "passed"
             },
             "line": 10,
@@ -106,7 +107,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-23T15:47:47.506Z",
+        "start_timestamp": "2020-11-23T17:52:49.688Z",
         "line": 3,
         "name": "Json schema validation for device API",
         "description": "",
@@ -127,7 +128,7 @@
           },
           {
             "result": {
-              "duration": 31000000,
+              "duration": 16000000,
               "status": "passed"
             },
             "line": 5,
@@ -139,7 +140,7 @@
           },
           {
             "result": {
-              "duration": 766000000,
+              "duration": 723000000,
               "status": "passed"
             },
             "line": 6,
@@ -163,7 +164,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-23T15:47:48.303Z",
+        "start_timestamp": "2020-11-23T17:52:50.435Z",
         "line": 3,
         "name": "connect to device for given ip",
         "description": "",
@@ -184,7 +185,7 @@
           },
           {
             "result": {
-              "duration": 1359000000,
+              "duration": 1624000000,
               "status": "passed"
             },
             "line": 5,
@@ -196,7 +197,7 @@
           },
           {
             "result": {
-              "duration": 31000000,
+              "duration": 74000000,
               "status": "passed"
             },
             "line": 6,
@@ -208,6 +209,7 @@
           },
           {
             "result": {
+              "duration": 16000000,
               "status": "passed"
             },
             "line": 7,
@@ -216,18 +218,6 @@
               "location": "stepDefinition.ConnectDevice.device_should_get_connected()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 31000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "response should contains success true message",
-            "match": {
-              "location": "stepDefinition.ConnectDevice.response_should_contains_success_true_message()"
-            },
-            "keyword": "And "
           }
         ]
       }
@@ -243,7 +233,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-23T15:47:49.724Z",
+        "start_timestamp": "2020-11-23T17:52:52.149Z",
         "line": 3,
         "name": "Disconnect to device for given ip",
         "description": "",
@@ -264,7 +254,7 @@
           },
           {
             "result": {
-              "duration": 32000000,
+              "duration": 16000000,
               "status": "passed"
             },
             "line": 5,
@@ -276,7 +266,7 @@
           },
           {
             "result": {
-              "duration": 31000000,
+              "duration": 32000000,
               "status": "passed"
             },
             "line": 6,
@@ -288,6 +278,7 @@
           },
           {
             "result": {
+              "duration": 8000000,
               "status": "passed"
             },
             "line": 7,
@@ -296,18 +287,6 @@
               "location": "stepDefinition.ConnectDevice.device_should_get_disconnected()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 16000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "response should contains success true message",
-            "match": {
-              "location": "stepDefinition.ConnectDevice.response_should_contains_success_true_message()"
-            },
-            "keyword": "And "
           }
         ]
       }
@@ -323,7 +302,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-23T15:47:49.818Z",
+        "start_timestamp": "2020-11-23T17:52:52.213Z",
         "line": 2,
         "name": "Get State of connected device",
         "description": "",
@@ -333,6 +312,7 @@
         "steps": [
           {
             "result": {
+              "duration": 8000000,
               "status": "passed"
             },
             "line": 3,
@@ -356,7 +336,7 @@
           },
           {
             "result": {
-              "duration": 15000000,
+              "duration": 16000000,
               "status": "passed"
             },
             "line": 5,
@@ -368,7 +348,7 @@
           },
           {
             "result": {
-              "duration": 79000000,
+              "duration": 80000000,
               "status": "passed"
             },
             "line": 6,
@@ -381,7 +361,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-23T15:47:49.928Z",
+        "start_timestamp": "2020-11-23T17:52:52.341Z",
         "line": 8,
         "name": "User should not be abl to get state of disconnected device",
         "description": "",
@@ -402,7 +382,7 @@
           },
           {
             "result": {
-              "duration": 15000000,
+              "duration": 16000000,
               "status": "passed"
             },
             "line": 10,
@@ -414,7 +394,7 @@
           },
           {
             "result": {
-              "duration": 47000000,
+              "duration": 32000000,
               "status": "passed"
             },
             "line": 11,
@@ -450,7 +430,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-23T15:47:50.006Z",
+        "start_timestamp": "2020-11-23T17:52:52.405Z",
         "line": 3,
         "name": "Json schema validation for state API",
         "description": "",
@@ -460,6 +440,7 @@
         "steps": [
           {
             "result": {
+              "duration": 8000000,
               "status": "passed"
             },
             "line": 4,
@@ -471,7 +452,7 @@
           },
           {
             "result": {
-              "duration": 15000000,
+              "duration": 8000000,
               "status": "passed"
             },
             "line": 5,
@@ -519,7 +500,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-23T15:47:50.084Z",
+        "start_timestamp": "2020-11-23T17:52:52.477Z",
         "line": 11,
         "name": "Change the brightness of connected device",
         "description": "",
@@ -529,6 +510,7 @@
         "steps": [
           {
             "result": {
+              "duration": 8000000,
               "status": "passed"
             },
             "line": 4,
@@ -540,7 +522,7 @@
           },
           {
             "result": {
-              "duration": 15000000,
+              "duration": 16000000,
               "status": "passed"
             },
             "line": 5,
@@ -582,7 +564,7 @@
           },
           {
             "result": {
-              "duration": 62000000,
+              "duration": 56000000,
               "status": "passed"
             },
             "line": 8,
@@ -605,7 +587,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-23T15:47:50.193Z",
+        "start_timestamp": "2020-11-23T17:52:52.605Z",
         "line": 21,
         "name": "Change the name of connected device",
         "description": "",
@@ -638,7 +620,7 @@
           },
           {
             "result": {
-              "duration": 15000000,
+              "duration": 16000000,
               "status": "passed"
             },
             "line": 16,
@@ -668,7 +650,7 @@
           },
           {
             "result": {
-              "duration": 31000000,
+              "duration": 48000000,
               "status": "passed"
             },
             "line": 18,
@@ -689,6 +671,92 @@
             "keyword": "And "
           }
         ]
+      },
+      {
+        "start_timestamp": "2020-11-23T17:52:52.717Z",
+        "line": 31,
+        "name": "Change the color of connected device",
+        "description": "",
+        "id": "change-the-name--brightness-and-color-of-the-connected-device;change-the-color-of-connected-device;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "API end points",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.api_end_points()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 24000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "you are connected to a device",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.you_are_connected_to_a_device()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "set color \"#336699\" using post operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"#336699\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinition.SetDeviceStateAttribute.set_color_using_post_operation(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "color should change for connected device",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.color_should_change_for_connected_device()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 48000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "verify \"color\" is updated to \"#336699\" for the state",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"color\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"#336699\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefinition.SetDeviceStateAttribute.verify_is_updated_to_for_the_state(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
       }
     ],
     "name": "Change the name, brightness and color of the connected device",
@@ -702,7 +770,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-23T15:47:50.271Z",
+        "start_timestamp": "2020-11-23T17:52:52.853Z",
         "line": 11,
         "name": "Not able to change brightness of device with invaild value",
         "description": "",
@@ -723,6 +791,7 @@
           },
           {
             "result": {
+              "duration": 16000000,
               "status": "passed"
             },
             "line": 5,
@@ -734,7 +803,7 @@
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 8000000,
               "status": "passed"
             },
             "line": 6,
@@ -752,7 +821,7 @@
           },
           {
             "result": {
-              "duration": 15000000,
+              "duration": 16000000,
               "status": "passed"
             },
             "line": 7,
@@ -764,7 +833,7 @@
           },
           {
             "result": {
-              "duration": 47000000,
+              "duration": 48000000,
               "status": "passed"
             },
             "line": 8,
@@ -787,7 +856,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-23T15:47:50.381Z",
+        "start_timestamp": "2020-11-23T17:52:52.949Z",
         "line": 12,
         "name": "Not able to change brightness of device with invaild value",
         "description": "",
@@ -808,7 +877,7 @@
           },
           {
             "result": {
-              "duration": 15000000,
+              "duration": 16000000,
               "status": "passed"
             },
             "line": 5,
@@ -820,7 +889,7 @@
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 24000000,
               "status": "passed"
             },
             "line": 6,
@@ -850,7 +919,7 @@
           },
           {
             "result": {
-              "duration": 46000000,
+              "duration": 24000000,
               "status": "passed"
             },
             "line": 8,
@@ -873,7 +942,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-23T15:47:50.474Z",
+        "start_timestamp": "2020-11-23T17:52:53.037Z",
         "line": 22,
         "name": "Not able to change color of device with invaild values",
         "description": "",
@@ -883,6 +952,7 @@
         "steps": [
           {
             "result": {
+              "duration": 3000000,
               "status": "passed"
             },
             "line": 15,
@@ -894,7 +964,6 @@
           },
           {
             "result": {
-              "duration": 16000000,
               "status": "passed"
             },
             "line": 16,
@@ -906,7 +975,7 @@
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 15000000,
               "status": "passed"
             },
             "line": 17,
@@ -924,7 +993,7 @@
           },
           {
             "result": {
-              "duration": 15000000,
+              "duration": 16000000,
               "status": "passed"
             },
             "line": 18,
@@ -936,7 +1005,7 @@
           },
           {
             "result": {
-              "duration": 32000000,
+              "duration": 47000000,
               "status": "passed"
             },
             "line": 19,
@@ -970,7 +1039,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-23T15:47:50.553Z",
+        "start_timestamp": "2020-11-23T17:52:53.118Z",
         "line": 3,
         "name": "Change the brightness of non connected device",
         "description": "",
@@ -980,7 +1049,6 @@
         "steps": [
           {
             "result": {
-              "duration": 15000000,
               "status": "passed"
             },
             "line": 4,
@@ -992,7 +1060,7 @@
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 26000000,
               "status": "passed"
             },
             "line": 5,
@@ -1004,7 +1072,6 @@
           },
           {
             "result": {
-              "duration": 15000000,
               "status": "passed"
             },
             "line": 6,
@@ -1022,7 +1089,7 @@
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 31000000,
               "status": "passed"
             },
             "line": 7,
@@ -1035,7 +1102,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-23T15:47:50.615Z",
+        "start_timestamp": "2020-11-23T17:52:53.175Z",
         "line": 9,
         "name": "Change the name of non connected device",
         "description": "",
@@ -1086,7 +1153,7 @@
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 63000000,
               "status": "passed"
             },
             "line": 13,
@@ -1099,7 +1166,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-23T15:47:50.662Z",
+        "start_timestamp": "2020-11-23T17:52:53.284Z",
         "line": 15,
         "name": "Change the color of non connected device",
         "description": "",
@@ -1132,7 +1199,7 @@
           },
           {
             "result": {
-              "duration": 15000000,
+              "duration": 16000000,
               "status": "passed"
             },
             "line": 18,
@@ -1150,7 +1217,7 @@
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 15000000,
               "status": "passed"
             },
             "line": 19,

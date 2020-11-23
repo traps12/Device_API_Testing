@@ -37,10 +37,6 @@ public class ConnectDevice {
     @Then("device should get connected")
     public void device_should_get_connected() {
         Assert.assertEquals(200, response.getStatusCode());
-    }
-
-    @Then("response should contains success true message")
-    public void response_should_contains_success_true_message() {
         String successMsg = deviceUtility.getDataFromResponse(response,"success");
         Assert.assertEquals("true", successMsg);
     }

@@ -39,6 +39,7 @@ public class GetDevice {
         Assert.assertEquals(200, response.getStatusCode());
         String jsonStr = response.getBody().asString();
         String ip =  deviceUtility.getDataFromResponseBody(response, "ip");
+        String name =  deviceUtility.getDataFromResponseBody(response, "name");
     }
 
     @Then("response structure should match with json schema")
