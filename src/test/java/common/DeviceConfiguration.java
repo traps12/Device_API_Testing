@@ -16,25 +16,25 @@ public class DeviceConfiguration {
     private String nameURL;
     private String stateURL;
 
-    private static DeviceConfiguration carConfigObj;
+    private static DeviceConfiguration deviceConfigObj;
 
     private DeviceConfiguration() {
     }
 
     /**
-     * @return CarConfiguration singleton object
+     * @return DeviceConfiguration singleton object
      */
     public static DeviceConfiguration getInstance() {
-        if(carConfigObj == null){
+        if(deviceConfigObj == null){
             synchronized (DeviceConfiguration.class){
-                if(carConfigObj == null){
-                    carConfigObj = new DeviceConfiguration();
+                if(deviceConfigObj == null){
+                    deviceConfigObj = new DeviceConfiguration();
                     //Load configuration values from config file
-                    carConfigObj.loadConfiguration();
+                    deviceConfigObj.loadConfiguration();
                 }
             }
         }
-        return carConfigObj;
+        return deviceConfigObj;
     }
 
 
