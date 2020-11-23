@@ -20,3 +20,13 @@ Feature: Change the name, brightness and color of the connected device
       |attribute|| value |
       |name| |foobar|
 
+  Scenario Outline: Change the color of connected device
+    Given API end points
+    And you are connected to a device
+    When  set color "<value>" using post operation
+    Then  color should change for connected device
+    And   verify "<attribute>" is updated to "<value>" for the state
+    Examples:
+      |attribute|| value |
+      |color| |#336699|
+
