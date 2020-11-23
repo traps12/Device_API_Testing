@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Car-API-Automation</td>
+              <td>1</td>
+            <td>23 Nov 2020, 07:47</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">stepDefinition.ConnectDevice.api_endpoint()</td>
+              <td>2</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.ConnectDevice.connect_to_device_using_post_operation()</td>
+              <td>2</td>
+              <td class="duration" data-value="31500000">0.031</td>
+              <td class="duration" data-value="31500000">0.032</td>
+              <td class="duration" data-value="63000000">0.063</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.ConnectDevice.device_should_get_connected()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.ConnectDevice.device_should_get_disconnected()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.ConnectDevice.disconnect_device_using_post_operation()</td>
+              <td>2</td>
+              <td class="duration" data-value="695000000">0.695</td>
+              <td class="duration" data-value="695000000">1.359</td>
+              <td class="duration" data-value="1390000000">1.390</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.ConnectDevice.response_should_contains_success_true_message()</td>
+              <td>2</td>
+              <td class="duration" data-value="23500000">0.023</td>
+              <td class="duration" data-value="23500000">0.031</td>
+              <td class="duration" data-value="47000000">0.047</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.GetDevice.devices_api_endpoint()</td>
+              <td>3</td>
+              <td class="duration" data-value="297000000">0.297</td>
+              <td class="duration" data-value="297000000">0.891</td>
+              <td class="duration" data-value="891000000">0.891</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.GetDevice.i_get_name_and_ip_of_devices()</td>
+              <td>1</td>
+              <td class="duration" data-value="47000000">0.047</td>
+              <td class="duration" data-value="47000000">0.047</td>
+              <td class="duration" data-value="47000000">0.047</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.GetDevice.i_perform_get_operation()</td>
+              <td>2</td>
+              <td class="duration" data-value="711000000">0.711</td>
+              <td class="duration" data-value="711000000">1.391</td>
+              <td class="duration" data-value="1422000000">1.422</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.GetDevice.i_perform_get_operation_with_invalid_url()</td>
+              <td>1</td>
+              <td class="duration" data-value="32000000">0.032</td>
+              <td class="duration" data-value="32000000">0.032</td>
+              <td class="duration" data-value="32000000">0.032</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.GetDevice.i_should_get_status()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.GetDevice.response_structure_should_match_with_json_schema()</td>
+              <td>1</td>
+              <td class="duration" data-value="766000000">0.766</td>
+              <td class="duration" data-value="766000000">0.766</td>
+              <td class="duration" data-value="766000000">0.766</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.GetState.device_is_connected()</td>
+              <td>2</td>
+              <td class="duration" data-value="15500000">0.015</td>
+              <td class="duration" data-value="15500000">0.016</td>
+              <td class="duration" data-value="31000000">0.031</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.GetState.device_is_disconnected()</td>
+              <td>1</td>
+              <td class="duration" data-value="15000000">0.015</td>
+              <td class="duration" data-value="15000000">0.015</td>
+              <td class="duration" data-value="15000000">0.015</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.GetState.get_state_information_about_device()</td>
+              <td>1</td>
+              <td class="duration" data-value="79000000">0.079</td>
+              <td class="duration" data-value="79000000">0.079</td>
+              <td class="duration" data-value="79000000">0.079</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.GetState.i_perform_get_state_of_connected_device()</td>
+              <td>3</td>
+              <td class="duration" data-value="26000000">0.026</td>
+              <td class="duration" data-value="26000000">0.047</td>
+              <td class="duration" data-value="78000000">0.078</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.GetState.response_from_state_api_should_contains_success_false_message()</td>
+              <td>1</td>
+              <td class="duration" data-value="16000000">0.016</td>
+              <td class="duration" data-value="16000000">0.016</td>
+              <td class="duration" data-value="16000000">0.016</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.GetState.response_structure_should_match_with_json_schema_of_state_api()</td>
+              <td>1</td>
+              <td class="duration" data-value="16000000">0.016</td>
+              <td class="duration" data-value="16000000">0.016</td>
+              <td class="duration" data-value="16000000">0.016</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.GetState.state_api_endpoint()</td>
+              <td>3</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.SetDeviceStateAttribute.api_end_points()</td>
+              <td>8</td>
+              <td class="duration" data-value="1875000">0.001</td>
+              <td class="duration" data-value="1875000">0.015</td>
+              <td class="duration" data-value="15000000">0.015</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.SetDeviceStateAttribute.brightness_should_change_for_connected_device()</td>
+              <td>1</td>
+              <td class="duration" data-value="16000000">0.016</td>
+              <td class="duration" data-value="16000000">0.016</td>
+              <td class="duration" data-value="16000000">0.016</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.SetDeviceStateAttribute.disconnect_device()</td>
+              <td>3</td>
+              <td class="duration" data-value="16000000">0.016</td>
+              <td class="duration" data-value="16000000">0.016</td>
+              <td class="duration" data-value="48000000">0.048</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.SetDeviceStateAttribute.name_should_change_for_connected_device()</td>
+              <td>1</td>
+              <td class="duration" data-value="16000000">0.016</td>
+              <td class="duration" data-value="16000000">0.016</td>
+              <td class="duration" data-value="16000000">0.016</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.SetDeviceStateAttribute.response_should_contains_success_false_message()</td>
+              <td>6</td>
+              <td class="duration" data-value="15666666">0.015</td>
+              <td class="duration" data-value="15666666">0.016</td>
+              <td class="duration" data-value="94000000">0.094</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.SetDeviceStateAttribute.set_brightness_using_post_operation(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="15750000">0.015</td>
+              <td class="duration" data-value="15750000">0.016</td>
+              <td class="duration" data-value="63000000">0.063</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.SetDeviceStateAttribute.set_color_using_post_operation(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="15500000">0.015</td>
+              <td class="duration" data-value="15500000">0.016</td>
+              <td class="duration" data-value="31000000">0.031</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.SetDeviceStateAttribute.set_name_using_post_operation(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="15000000">0.015</td>
+              <td class="duration" data-value="15000000">0.015</td>
+              <td class="duration" data-value="30000000">0.030</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.SetDeviceStateAttribute.verify_is_not_updated_to_for_the_state(java.lang.String,java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="41666666">0.041</td>
+              <td class="duration" data-value="41666666">0.047</td>
+              <td class="duration" data-value="125000000">0.125</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.SetDeviceStateAttribute.verify_is_updated_to_for_the_state(java.lang.String,java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="46500000">0.046</td>
+              <td class="duration" data-value="46500000">0.062</td>
+              <td class="duration" data-value="93000000">0.093</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinition.SetDeviceStateAttribute.you_are_connected_to_a_device()</td>
+              <td>5</td>
+              <td class="duration" data-value="12400000">0.012</td>
+              <td class="duration" data-value="12400000">0.016</td>
+              <td class="duration" data-value="62000000">0.062</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>30</td>
+            <td>68</td>
+            <td class="duration">0.080</td>
+            <td class="duration">1.422</td>
+            <td class="duration">5.486</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

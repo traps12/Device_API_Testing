@@ -1,0 +1,8 @@
+stepDefinition\SetDeviceStateAttribute.class
+common\DeviceConfiguration.class
+stepDefinition\ConnectDevice.class
+common\Constants.class
+common\DeviceUtility.class
+stepDefinition\GetDevice.class
+runner\TestRunner.class
+stepDefinition\GetState.class

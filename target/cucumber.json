@@ -1,0 +1,1173 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-23T15:47:44.974Z",
+        "line": 3,
+        "name": "Get list of available devices name and IP",
+        "description": "",
+        "id": "get-list-all-available-devices:-get-`/devices`;get-list-of-available-devices-name-and-ip",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 891000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "devices API endpoint",
+            "match": {
+              "location": "stepDefinition.GetDevice.devices_api_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1391000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I perform GET operation",
+            "match": {
+              "location": "stepDefinition.GetDevice.i_perform_get_operation()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 47000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I get name and IP of devices",
+            "match": {
+              "location": "stepDefinition.GetDevice.i_get_name_and_ip_of_devices()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-23T15:47:47.474Z",
+        "line": 8,
+        "name": "It should not return valid response for invalid Url",
+        "description": "",
+        "id": "get-list-all-available-devices:-get-`/devices`;it-should-not-return-valid-response-for-invalid-url",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "devices API endpoint",
+            "match": {
+              "location": "stepDefinition.GetDevice.devices_api_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 32000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I perform GET operation with invalid url",
+            "match": {
+              "location": "stepDefinition.GetDevice.i_perform_get_operation_with_invalid_url()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should get 404 status",
+            "match": {
+              "location": "stepDefinition.GetDevice.i_should_get_status()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Get list all available devices: GET `/devices`",
+    "description": "",
+    "id": "get-list-all-available-devices:-get-`/devices`",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/1_device_api/get_device_api.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-23T15:47:47.506Z",
+        "line": 3,
+        "name": "Json schema validation for device API",
+        "description": "",
+        "id": "schema-validation-for-device-api-response;json-schema-validation-for-device-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "devices API endpoint",
+            "match": {
+              "location": "stepDefinition.GetDevice.devices_api_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 31000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I perform GET operation",
+            "match": {
+              "location": "stepDefinition.GetDevice.i_perform_get_operation()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 766000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "response structure should match with json schema",
+            "match": {
+              "location": "stepDefinition.GetDevice.response_structure_should_match_with_json_schema()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Schema validation for device API response",
+    "description": "",
+    "id": "schema-validation-for-device-api-response",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/1_device_api/get_device_schema_validation.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-23T15:47:48.303Z",
+        "line": 3,
+        "name": "connect to device for given ip",
+        "description": "",
+        "id": "connect-to-a-device:-post-`/connect`;connect-to-device-for-given-ip",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "API endpoint",
+            "match": {
+              "location": "stepDefinition.ConnectDevice.api_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1359000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "disconnect device using post operation",
+            "match": {
+              "location": "stepDefinition.ConnectDevice.disconnect_device_using_post_operation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "connect to device using post operation",
+            "match": {
+              "location": "stepDefinition.ConnectDevice.connect_to_device_using_post_operation()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "device should get connected",
+            "match": {
+              "location": "stepDefinition.ConnectDevice.device_should_get_connected()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 31000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "response should contains success true message",
+            "match": {
+              "location": "stepDefinition.ConnectDevice.response_should_contains_success_true_message()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Connect to a device: POST `/connect`",
+    "description": "",
+    "id": "connect-to-a-device:-post-`/connect`",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/2_connect_and_disconnect_api/connect_device.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-23T15:47:49.724Z",
+        "line": 3,
+        "name": "Disconnect to device for given ip",
+        "description": "",
+        "id": "disconnect-from-any-connected-device:-post-`/disconnect`;disconnect-to-device-for-given-ip",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "API endpoint",
+            "match": {
+              "location": "stepDefinition.ConnectDevice.api_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 32000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "connect to device using post operation",
+            "match": {
+              "location": "stepDefinition.ConnectDevice.connect_to_device_using_post_operation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "disconnect device using post operation",
+            "match": {
+              "location": "stepDefinition.ConnectDevice.disconnect_device_using_post_operation()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "device should get disconnected",
+            "match": {
+              "location": "stepDefinition.ConnectDevice.device_should_get_disconnected()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "response should contains success true message",
+            "match": {
+              "location": "stepDefinition.ConnectDevice.response_should_contains_success_true_message()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Disconnect from any connected device: POST `/disconnect`",
+    "description": "",
+    "id": "disconnect-from-any-connected-device:-post-`/disconnect`",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/2_connect_and_disconnect_api/disconnect_device_api.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-23T15:47:49.818Z",
+        "line": 2,
+        "name": "Get State of connected device",
+        "description": "",
+        "id": "get-the-state-of-a-device:-get-`/state`;get-state-of-connected-device",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "state API endpoint",
+            "match": {
+              "location": "stepDefinition.GetState.state_api_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "device is connected",
+            "match": {
+              "location": "stepDefinition.GetState.device_is_connected()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I perform get state of connected device",
+            "match": {
+              "location": "stepDefinition.GetState.i_perform_get_state_of_connected_device()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 79000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "get state information about device",
+            "match": {
+              "location": "stepDefinition.GetState.get_state_information_about_device()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-23T15:47:49.928Z",
+        "line": 8,
+        "name": "User should not be abl to get state of disconnected device",
+        "description": "",
+        "id": "get-the-state-of-a-device:-get-`/state`;user-should-not-be-abl-to-get-state-of-disconnected-device",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "state API endpoint",
+            "match": {
+              "location": "stepDefinition.GetState.state_api_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "device is disconnected",
+            "match": {
+              "location": "stepDefinition.GetState.device_is_disconnected()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I perform get state of connected device",
+            "match": {
+              "location": "stepDefinition.GetState.i_perform_get_state_of_connected_device()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "response from state api should contains success false message",
+            "match": {
+              "location": "stepDefinition.GetState.response_from_state_api_should_contains_success_false_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Get the state of a device: GET `/state`",
+    "description": "",
+    "id": "get-the-state-of-a-device:-get-`/state`",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/3_state_api/get_state_api.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-23T15:47:50.006Z",
+        "line": 3,
+        "name": "Json schema validation for state API",
+        "description": "",
+        "id": "schema-validation-for-state-api;json-schema-validation-for-state-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "state API endpoint",
+            "match": {
+              "location": "stepDefinition.GetState.state_api_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "device is connected",
+            "match": {
+              "location": "stepDefinition.GetState.device_is_connected()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I perform get state of connected device",
+            "match": {
+              "location": "stepDefinition.GetState.i_perform_get_state_of_connected_device()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "response structure should match with json schema of state API",
+            "match": {
+              "location": "stepDefinition.GetState.response_structure_should_match_with_json_schema_of_state_api()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Schema validation for state API",
+    "description": "",
+    "id": "schema-validation-for-state-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/3_state_api/get_state_schema_validation.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-23T15:47:50.084Z",
+        "line": 11,
+        "name": "Change the brightness of connected device",
+        "description": "",
+        "id": "change-the-name--brightness-and-color-of-the-connected-device;change-the-brightness-of-connected-device;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "API end points",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.api_end_points()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "you are connected to a device",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.you_are_connected_to_a_device()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "set brightness \"6.0\" using post operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"6.0\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinition.SetDeviceStateAttribute.set_brightness_using_post_operation(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "brightness should change for connected device",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.brightness_should_change_for_connected_device()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 62000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify \"brightness\" is updated to \"6.0\" for the state",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"brightness\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"6.0\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinition.SetDeviceStateAttribute.verify_is_updated_to_for_the_state(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-23T15:47:50.193Z",
+        "line": 21,
+        "name": "Change the name of connected device",
+        "description": "",
+        "id": "change-the-name--brightness-and-color-of-the-connected-device;change-the-name-of-connected-device;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "API end points",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.api_end_points()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "you are connected to a device",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.you_are_connected_to_a_device()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "set name \"foobar\" using post operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"foobar\"",
+                  "offset": 9
+                }
+              ],
+              "location": "stepDefinition.SetDeviceStateAttribute.set_name_using_post_operation(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "name should change for connected device",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.name_should_change_for_connected_device()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 31000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "verify \"name\" is updated to \"foobar\" for the state",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"name\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"foobar\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinition.SetDeviceStateAttribute.verify_is_updated_to_for_the_state(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Change the name, brightness and color of the connected device",
+    "description": "",
+    "id": "change-the-name--brightness-and-color-of-the-connected-device",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/4_device_state_attributes_api/set_device_attribute_connected.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-23T15:47:50.271Z",
+        "line": 11,
+        "name": "Not able to change brightness of device with invaild value",
+        "description": "",
+        "id": "user-should-not-able-to-change-the-name--brightness-and-color-with-invalid-values;not-able-to-change-brightness-of-device-with-invaild-value;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "API end points",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.api_end_points()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "you are connected to a device",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.you_are_connected_to_a_device()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "set brightness \"12\" using post operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinition.SetDeviceStateAttribute.set_brightness_using_post_operation(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "response should contains success false message",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.response_should_contains_success_false_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 47000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify \"brightness\" is not updated to \"12\" for the state",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"brightness\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"12\"",
+                  "offset": 38
+                }
+              ],
+              "location": "stepDefinition.SetDeviceStateAttribute.verify_is_not_updated_to_for_the_state(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-23T15:47:50.381Z",
+        "line": 12,
+        "name": "Not able to change brightness of device with invaild value",
+        "description": "",
+        "id": "user-should-not-able-to-change-the-name--brightness-and-color-with-invalid-values;not-able-to-change-brightness-of-device-with-invaild-value;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "API end points",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.api_end_points()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "you are connected to a device",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.you_are_connected_to_a_device()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "set brightness \"-1\" using post operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"-1\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinition.SetDeviceStateAttribute.set_brightness_using_post_operation(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "response should contains success false message",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.response_should_contains_success_false_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 46000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify \"brightness\" is not updated to \"-1\" for the state",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"brightness\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"-1\"",
+                  "offset": 38
+                }
+              ],
+              "location": "stepDefinition.SetDeviceStateAttribute.verify_is_not_updated_to_for_the_state(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-23T15:47:50.474Z",
+        "line": 22,
+        "name": "Not able to change color of device with invaild values",
+        "description": "",
+        "id": "user-should-not-able-to-change-the-name--brightness-and-color-with-invalid-values;not-able-to-change-color-of-device-with-invaild-values;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "API end points",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.api_end_points()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "you are connected to a device",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.you_are_connected_to_a_device()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "set color \"#\" using post operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"#\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinition.SetDeviceStateAttribute.set_color_using_post_operation(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "response should contains success false message",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.response_should_contains_success_false_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 32000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "verify \"color\" is not updated to \"#\" for the state",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"color\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"#\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinition.SetDeviceStateAttribute.verify_is_not_updated_to_for_the_state(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "User should not able to change the name, brightness and color with invalid values",
+    "description": "",
+    "id": "user-should-not-able-to-change-the-name--brightness-and-color-with-invalid-values",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/4_device_state_attributes_api/set_device_attribute_invalid_value.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-23T15:47:50.553Z",
+        "line": 3,
+        "name": "Change the brightness of non connected device",
+        "description": "",
+        "id": "user-should-not-be-able-to-change-the-name--brightness-and-color-of-the-not-connected-device;change-the-brightness-of-non-connected-device",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "API end points",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.api_end_points()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "disconnect device",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.disconnect_device()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "set brightness \"6.0\" using post operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"6.0\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinition.SetDeviceStateAttribute.set_brightness_using_post_operation(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "response should contains success false message",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.response_should_contains_success_false_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-23T15:47:50.615Z",
+        "line": 9,
+        "name": "Change the name of non connected device",
+        "description": "",
+        "id": "user-should-not-be-able-to-change-the-name--brightness-and-color-of-the-not-connected-device;change-the-name-of-non-connected-device",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "API end points",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.api_end_points()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "disconnect device",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.disconnect_device()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "set name \"foobar\" using post operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"foobar\"",
+                  "offset": 9
+                }
+              ],
+              "location": "stepDefinition.SetDeviceStateAttribute.set_name_using_post_operation(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "response should contains success false message",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.response_should_contains_success_false_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-23T15:47:50.662Z",
+        "line": 15,
+        "name": "Change the color of non connected device",
+        "description": "",
+        "id": "user-should-not-be-able-to-change-the-name--brightness-and-color-of-the-not-connected-device;change-the-color-of-non-connected-device",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "API end points",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.api_end_points()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "disconnect device",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.disconnect_device()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "set color \"#336699\" using post operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"#336699\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinition.SetDeviceStateAttribute.set_color_using_post_operation(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "response should contains success false message",
+            "match": {
+              "location": "stepDefinition.SetDeviceStateAttribute.response_should_contains_success_false_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "User should not be able to change the name, brightness and color of the not connected device",
+    "description": "",
+    "id": "user-should-not-be-able-to-change-the-name--brightness-and-color-of-the-not-connected-device",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/4_device_state_attributes_api/set_device_attribute_not_connected.feature",
+    "tags": []
+  }
+]

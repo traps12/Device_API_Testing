@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "required": ["name","ip", "color", "brightness"],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "ip": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "brightness": {
+      "type": "number"
+    }
+  }
+}
