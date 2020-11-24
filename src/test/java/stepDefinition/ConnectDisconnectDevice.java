@@ -10,7 +10,7 @@ import io.restassured.specification.RequestSpecification;
 import org.junit.AfterClass;
 import org.junit.Assert;
 
-public class ConnectDevice {
+public class ConnectDisconnectDevice {
     RequestSpecification request;
     Response response;
     DeviceConfiguration config = DeviceConfiguration.getInstance();

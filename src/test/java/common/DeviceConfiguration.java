@@ -46,13 +46,13 @@ public class DeviceConfiguration {
         try {
             InputStream is = getClass().getClassLoader().getResourceAsStream(Constants.TEST_PROPERTIES_FILENAME);
             configProperties.load(is);
-            baseURI = configProperties.getProperty("BASE_URI");
-            deviceURL = configProperties.getProperty("DEVICE_API_URL");
-            connectURL = configProperties.getProperty("CONNECT_API_URL");
-            brightnessURL = configProperties.getProperty("BRIGHTNESS_API_URL");
-            colorURL = configProperties.getProperty("COLOR_API_URL");
-            nameURL = configProperties.getProperty("NAME_API_URL");
-            stateURL = configProperties.getProperty("STATE_API_URL");
+            baseURI = configProperties.getProperty(Constants.BASE_API_URL);
+            deviceURL = configProperties.getProperty(Constants.DEVICE_API_URL);
+            connectURL = configProperties.getProperty(Constants.CONNECT_API_URL);
+            brightnessURL = configProperties.getProperty(Constants.BRIGHTNESS_API_URL);
+            colorURL = configProperties.getProperty(Constants.COLOR_API_URL);
+            nameURL = configProperties.getProperty(Constants.NAME_API_URL);
+            stateURL = configProperties.getProperty(Constants.STATE_API_URL);
         } catch (IOException e) {
             //Can create logger and log the error
             e.printStackTrace();
